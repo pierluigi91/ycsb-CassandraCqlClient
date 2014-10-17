@@ -98,7 +98,7 @@ public class BasicDB extends DB
 	public int read(String table, String key, Set<String> fields, HashMap<String,ByteIterator> result)
 	{
 		delay();
-
+				
 		if (verbose)
 		{
 			System.out.print("READ "+table+" "+key+" [ ");

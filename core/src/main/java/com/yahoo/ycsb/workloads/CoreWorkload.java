@@ -71,7 +71,7 @@ public class CoreWorkload extends Workload
 	/**
 	 * The default name of the database table to run queries against.
 	 */
-	public static final String TABLENAME_PROPERTY_DEFAULT="usertable";
+	public static final String TABLENAME_PROPERTY_DEFAULT="simplex";
 
 	public static String table;
 

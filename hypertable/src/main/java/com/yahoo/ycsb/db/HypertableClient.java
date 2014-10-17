@@ -65,7 +65,8 @@ public class HypertableClient extends com.yahoo.ycsb.DB
      */
     @Override
     public void init() throws DBException
-    {        
+    {       
+    	
         if ( (getProperties().getProperty("debug") != null) &&
                 (getProperties().getProperty("debug").equals("true")) )
         {

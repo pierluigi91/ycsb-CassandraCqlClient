@@ -105,8 +105,10 @@ if sys.argv[2] not in DATABASES:
 ycsb_home = get_ycsb_home()
 command = COMMANDS[sys.argv[1]]["command"]
 database = sys.argv[2]
+
 db_classname = DATABASES[database]
 options = sys.argv[3:]
+print db_classname
 
 ycsb_command = ["java", "-cp", os.pathsep.join(find_jars(ycsb_home, database)), \
                 COMMANDS[sys.argv[1]]["main"], "-db", db_classname] + options
